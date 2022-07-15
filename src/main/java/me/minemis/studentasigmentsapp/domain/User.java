@@ -19,7 +19,7 @@ public class User implements UserDetails {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private LocalDate cohortStartDate;
-    private String userName;
+    private String username;
     private String password;
 
     @Getter(AccessLevel.NONE)
@@ -33,7 +33,7 @@ public class User implements UserDetails {
 
     @Override
     public String getUsername() {
-        return this.userName;
+        return this.username;
     }
 
     @Override
